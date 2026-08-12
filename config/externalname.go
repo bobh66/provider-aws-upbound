@@ -2671,7 +2671,7 @@ var TerraformPluginSDKExternalNameConfigs = map[string]config.ExternalName{
 
 	// sfn
 	//
-	"aws_sfn_activity": config.TemplatedStringAsIdentifier("name", fullARNTemplate("states", "activity/{{ .external_name }}")),
+	"aws_sfn_activity": config.TemplatedStringAsIdentifier("name", fullARNTemplate("states", "activity:{{ .external_name }}")),
 	//
 	"aws_sfn_state_machine": config.TemplatedStringAsIdentifier("name", fullARNTemplate("states", "stateMachine:{{ .external_name }}")),
 
